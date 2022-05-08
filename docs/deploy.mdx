@@ -4,10 +4,11 @@ title: Team - Deploy
 ---
 
 :::info
-Deploying a website is making it available on the Internet. The production version is deployed when stakeholders agree. 
+Deploying a website is making it available on the Internet. The production version is deployed when stakeholders agree.
 
-Meanwhile, developers working on features, fixes, or testing may deploy private website with their changes, without disturbing other developers work or the production version. This enables the stakeholders to monitor progress.  See [Preview Deployments](glossary#preview-deployments)
+Meanwhile, developers working on features, fixes, or testing may deploy private website with their changes, without disturbing other developers work or the production version. This enables the stakeholders to monitor progress. See [Preview Deployments](glossary#preview-deployments)
 :::
+
 ---
 
 ## Prerequisites
@@ -16,20 +17,20 @@ Meanwhile, developers working on features, fixes, or testing may deploy private 
   - Public website
   - Private development websites
   - Vendor
-  - Secured 
+  - Secured
 
 ---
 
 ## Deployment
 
-[Docusaurus](https://docusaurus.io/docs#features) supports static site hosting services such as [Vercel](https://vercel.com/), [GitHub Pages](https://pages.github.com/), [Netlify](https://www.netlify.com/), [Cloudflare](https://www.cloudflare.com), and others. I have used these and other hosting services. My choice is Cloudflare. 
+[Docusaurus](https://docusaurus.io/docs#features) supports static site hosting services such as [Vercel](https://vercel.com/), [GitHub Pages](https://pages.hub.com/), [Netlify](https://www.netlify.com/), [Cloudflare](https://www.cloudflare.com), and others. I have used these and other hosting services. My choice is Cloudflare.
 
 ---
 
 ### Cloudflare
 
 This website is using [Cloudflare](https://www.cloudflare.com) for a [Content Delivery Network (CDN)](https://en.wikipedia.org/wiki/Content_delivery_network), Domain Name System (DNS) and website deployment.
-Cloudflare builds websites and deploys them when `git` pushes changes from the *Local Repository* to the *Central Repository*, Cloudflare then automatically builds the website and deploys to the Internet.
+Cloudflare builds websites and deploys them when `git` pushes changes from the _Local Repository_ to the _Central Repository_, Cloudflare then automatically builds the website and deploys to the Internet.
 
 Benefits deploying projects with Cloudflare are:
 
@@ -40,9 +41,9 @@ Benefits deploying projects with Cloudflare are:
 Features I like are:
 
 - Zero Trust Security  
-[What is Zero Trust security?](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
+  [What is Zero Trust security?](https://www.cloudflare.com/learning/security/glossary/what-is-zero-trust/)
 
-- Automatic website deployment after a push to the GitHub repository for production websites. Team members may show their new features they are working or their remediation of defects by deploying their local repository to a private and secure website where stockholders view their work and give feedback.  See [Preview Deployments](glossary#preview-deployments)
+- Automatic website deployment after a push to the GitHub repository for production websites. Team members may show their new features they are working or their remediation of defects by deploying their local repository to a private and secure website where stockholders view their work and give feedback. See [Preview Deployments](glossary#preview-deployments)
 - Builds are quick, especially those with few changes.
 - Quickly redeploy previous deployments.
 

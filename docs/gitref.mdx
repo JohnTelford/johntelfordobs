@@ -1,0 +1,182 @@
+---
+id: gitref
+title: Git-Github
+---
+
+- [Git](https://git-scm.com/)
+- [GitHub](https://github.com/)
+
+---
+colophon.mdx
+
+- GitHub Repositories.  
+Remotely browse and edit any GitHub repository
+
+### Git Client
+
+
+VScode built-in git commands :
+ - Review diffs, 
+ - Stage files
+ - Make commits
+ - Push 
+ - pull 
+
+---
+
+### Fork
+Git repositories are fundamental to a project, I use [Fork](https://git-fork.com) to augment VScode git commands:
+
+- Repository Manager Summary and Statistics
+- Fetch, pull, push
+- Commit, amend
+- Create and delete branches and tags
+- Create and delete remote repos
+- Checkout branch or revision
+- Cherry-pick, revert
+- Merge
+- Rebase
+- Stashes
+- Submodules
+- Interactive rebase
+- Blame
+- Browse the repository file tree at any commit
+- Intuitive merge conflict resolving
+- Restore lost commits with Reflog
+- See stashes right in the commit list
+- Git-flow
+- Git LFS
+- GPG
+
+---
+developmentstack.mdx
+
+::caution
+The key *Iterative Development* technologies are [git](glossary#git) and [GitHub](glossary#github).
+:::
+
+Team members use the Website Development Stack to develop and deploy websites to the Internet. 
+
+There would be confusion and possible defects created if Team members were to directly make changes to the same project repository.  
+
+A solution to this problem is to have one central repository controlled by a gatekeeper. Each team member [forks](glossary#fork) a copy to their GetHub account and makes a clone of it on their workstation.
+
+---
+
+- Each developer makes changes to their repository [clone](glossary#clone). They cannot directly make changes to the central repository.
+
+	- Team members commit changes to their local repository clone
+
+	- They may deploy their local repository to a private Internet website for stakeholders to see and give feedback.  See [Preview Deployments](glossary#preview-deployments)
+
+- The process is managed using [GitHub for Teams](https://github.com/team). When stakeholders determine developers changes, defect fixes, or new features are ready, a GitHub pull request is made by developers to the central project repository. 
+
+	- Project team members and the gatekeeper are notified by GitHub of the [pull](glossary#pull-request) request. They may examine, comment on, suggest possible changes, and test the code. 
+
+	- When the team agrees on developers changes, they are committed to the central project repository by the gatekeeper. This process is repeated for each developer set of changes. 
+
+	- Iterations of the central project repository may be deployed by the gatekeeper to a private website for stakeholders viewing.  See [Preview Deployments](glossary#preview-deployments)
+
+- The next step is each developer pulls the central repository changes and commits them to their local repository copy of the central project. This process keeps team members up to date on changes.
+
+- The central project repository may be deployed to the public Internet by the gatekeeper after stakeholders agree there have been sufficient development and testing iterations.
+
+---
+
+
+## Central Repository
+
+The core of Iterative Development is a file central repository controlled by a gatekeeper.
+
+GitHub is a Distributed Version Control Systems  enabling multiple teams to work separately without having an impact on the work of others. GitHub is a central online web hosted project repository for all project files. It is a unified source of truth. It helps teams collaborate and maintain the entire history of project file changes. Teams can view history of all changes and go back to previous file versions.
+
+> It helps answer the questions *who changed what, where, when, and why?*
+
+All team members have their own local copy of the central project repository. They make changes, fix defects, add new features to their repository, without interfering with others team members, or the central repository.
+
+Team members cannot directly make changes to the central repository. They may deploy their copy of the repository with their changes, to a private Internet website for stakeholders to see and give feedback.
+
+When stakeholders determine some changes, defect fixes, or new features are ready, they will be committed to central project repository, and team members update their local copy by pulling central repository changes into their local repository. This process keeps team members up to date.
+
+---
+
+developmenttools.mdx
+
+## git 
+
+![gitlogo](/img/gitlogo.png)
+
+:::info
+[`Git`](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+
+`Git`has a tiny footprint with lightning fast performance. It outclasses SCM tools like Subversion, CVS, Perforce, and ClearCase with features like cheap local branching, convenient staging areas, and multiple workflows.
+:::
+
+---
+
+## GitHub 
+
+![gitHublogo](/img/gitHublogo.png)
+
+:::info
+All developers need a `GitHub` account. It is a Microsoft company
+"[`GitHub`](https://github.com/) is a Distributed Version Control Systems (DVCS) enabling multiple developers or teams to work separately without having an impact on the work of others. GitHub is a central online web hosted project repository for all project files. It is a unified source of truth. It helps teams collaborate and maintain the entire history of project file changes. Teams can view history of all changes and go back to previous file versions."
+
+GitHub is a unified source of truth helping to answer the questions *who* changed *what*, *where*, *when*, and *why*?
+:::
+
+---
+
+### GitHub Desktop
+
+[GitHub Desktop](https://desktop.github.com/)
+
+[What is GitHub Desktop and who is it for?
+](https://github.com/desktop/desktop/blob/development/docs/process/what-is-desktop.md#what-is-github-desktop-and-who-is-it-for)
+
+---
+
+## Fork
+
+[Fork](colophon#fork) is a quick way to check repository branches, commits, file changes, and much more.
+
+---
+
+glossary.mdx
+
+[git](developmenttools#git)
+
+[git-workflow](https://gist.github.com/datagrok/d1650d85496cd509d42b8656d30410cf)
+
+[What is git](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+
+ ### GitHub
+
+[GitHub](developmenttools#github)
+
+[What is GitHub](https://www.w3schools.com/whatis/whatis_github.asp)
+
+### Central Repository
+Central Repository is a *git* repepository located at *GitHub*
+
+### Clone
+User makes the changes and push back to their own forked repository.
+
+### Fork
+[Fork](https://git-fork.com)
+User creates a copy of a private repository to their own GitHub account. Changes can not be directly applied to the forked repository. A pull request must be made.
+
+### Pull Request
+A user sends the changes to the forked repository. This process is called as Pull Request in Git. The repository guardian and possible other team members are notified of the pull request. They will accept or modify the changes and apply them to the forked repository, or reject the them.
+
+---
+
+programming.mdx
+
+### Version Control System
+
+- [git](developmenttools#git) commands
+
+- [GitHub](developmenttools#github) commands
+
+---

@@ -55,14 +55,23 @@ const sidebars = {
       },
 
       {
+        'Applications':[
+           'chronosyncref',
+           'cloudflareref',
+          'docusaurusref',
+          'gitref',
+          'iawriterref',
+          'languagesref',
+          'vscoderef',
+        ]
+      },
+
+    {
         'Company':[
           'company',
           'contact',
         ],
       },
-
-       'colophon',
-      'glossary',
 
     ],
 };
