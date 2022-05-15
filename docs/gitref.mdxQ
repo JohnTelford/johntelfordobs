@@ -12,7 +12,7 @@ The key *Iterative Development* technologies are [Git](#git) and [GitHub](#githu
 
 ## Central Repository
 
-The core of Iterative Development is the ==GitHub== central repository controlled by a gatekeeper.
+The core of Iterative Development is the GitHub central repository controlled by a gatekeeper.
 
 ### GitHub
 
@@ -20,7 +20,7 @@ GitHub is a Distributed Version Control Systems  enabling multiple teams to work
 
 > It helps answer the questions *who changed what, where, when, and why?*
 
-Team members use the ==Website Development Stack== to develop and deploy websites to the Internet. 
+Team members use the Website Development Stack to develop and deploy websites to the Internet. 
 
 [GitHub - Managing an organization](https://git-scm.com/book/en/v2/GitHub-Managing-an-organization)
 
@@ -41,7 +41,7 @@ Git is the most widely used file version control system that track file changes.
 
 A Git project consists of three major sections: the local clone of the GitHub central repositorie, the staging area, and the GitHub project master repository. 
 
-Each team member ==[fork](glossary#fork)== a copy of the GitHub project central repository to their GetHub account and makes a clone of it on their workstation.
+Each team member [fork](glossary#fork) a copy of the GitHub project central repository to their GetHub account and makes a clone of it on their workstation.
 
 Files are created, edited, and delete in team members local repositories. The changes are staged, then committed to the team members GitHub repository.
 
@@ -49,15 +49,15 @@ Files are created, edited, and delete in team members local repositories. The ch
 
 	- Team members commit changes to their local repository.
 
-	- They may deploy their local repository to a private Internet website for stakeholders to see and give feedback.  See [==Preview Deployments](glossary#preview-deployments)==
+	- They may deploy their local repository to a private Internet website for stakeholders to see and give feedback.  See [Preview Deployments](glossary#preview-deployments)
 
-- The process is managed using [GitHub for Teams](https://github.com/team). When stakeholders determine developers changes, defect fixes, or new features are ready, a GitHub ==pull== request is made by developers to the central project repository. 
+- The process is managed using [GitHub for Teams](https://github.com/team). When stakeholders determine developers changes, defect fixes, or new features are ready, a GitHub pull request is made by developers to the central project repository. 
 
-	- Project team members and the gatekeeper are notified by GitHub of the ==[pull request](glossary#pull-request)== request. They may examine, comment on, suggest possible changes, and test the code. 
+	- Project team members and the gatekeeper are notified by GitHub of the [pull request](glossary#pull-request) request. They may examine, comment on, suggest possible changes, and test the code. 
 
 	- When the team agrees on developers changes, they are committed to the central project repository by the gatekeeper. This process is repeated for each developer set of changes. 
 
-	- Iterations of the central project repository with developer changes may be deployed by the gatekeeper to a private website for stakeholders viewing.  See ==[Preview Deployments](glossary#preview-deployments)==
+	- Iterations of the central project repository with developer changes may be deployed by the gatekeeper to a private website for stakeholders viewing.  See [Preview Deployments](glossary#preview-deployments)
 
 - Each developer pulls the central repository changes when the stakeholders agree that developers changes, defect fixes, or new features are functional, and commits them to their local repository of the central project. This process keeps team members up to date on changes, and individual team member testing will determine if the changes are compatible with the changes, defect fixes, or new features they are working on.
 
@@ -70,7 +70,7 @@ Files are created, edited, and delete in team members local repositories. The ch
 Using git is less complicated using VScode editor built-in git commands:
 
 - Create a uniquely name branch for each fixing defect fixing, update changes, and creating new features. Commit a branch and request a pull request when work is completed on a branch.
-- Project team members and the gatekeeper are notified by GitHub of the ==[pull request](glossary#pull-request)== request. They may examine, comment on, suggest possible changes, and test the code. 
+- Project team members and the gatekeeper are notified by GitHub of the [pull request](glossary#pull-request) request. They may examine, comment on, suggest possible changes, and test the code. 
 	
 - Review diffs     
 	Review the differences between files being edited and files in the local project repository
@@ -234,29 +234,29 @@ GitHub is a unified source of truth helping to answer the questions *who* change
 
 glossary.mdx
 
-==[git](developmenttools#git)==
+[git](developmenttools#git)
 
-==[git-workflow](https://gist.github.com/datagrok/d1650d85496cd509d42b8656d30410cf)==
+[git-workflow](https://gist.github.com/datagrok/d1650d85496cd509d42b8656d30410cf)
 
-==[What is git](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)==
+[What is git](https://www.git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 
  ### GitHub
 
-==[GitHub](developmenttools#github)==
+[GitHub](developmenttools#github)
 
-==[What is GitHub](https://www.w3schools.com/whatis/whatis_github.asp)==
+[What is GitHub](https://www.w3schools.com/whatis/whatis_github.asp)
 
 ### Central Repository
 Central Repository is a *git* repepository located at *GitHub*
 
-### ==Clone==
+### Clone
 User makes the changes and push back to their own forked repository.
 
-### ==Fork==
+### Fork
 [Fork](https://git-fork.com)
 User creates a copy of a private repository to their own GitHub account. Changes can not be directly applied to the forked repository. A pull request must be made.
 
-### ==Pull Request==
+### Pull Request
 A user sends the changes to the forked repository. This process is called as Pull Request in Git. The repository guardian and possible other team members are notified of the pull request. They will accept or modify the changes and apply them to the forked repository, or reject the them.
 
 ---

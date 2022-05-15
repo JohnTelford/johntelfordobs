@@ -59,7 +59,6 @@ const sidebars = {
            'chronosyncref',
            'cloudflareref',
           'docusaurusref',
-          'gitref',
           'iawriterref',
           'languagesref',
           'vscoderef',
